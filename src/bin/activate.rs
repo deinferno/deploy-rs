@@ -329,7 +329,7 @@ pub async fn wait(temp_path: String, closure: String) -> Result<(), WaitError> {
         return Ok(());
     }
 
-    danger_zone(done, 240).await?;
+    danger_zone(done, 720).await?;
 
     info!("Found canary file, done waiting!");
 
